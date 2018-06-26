@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/centerButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:enabled="true"
+        android:background="@mipmap/start"
+         />
+
+    <Button
+        android:id="@+id/rightButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/centerButton"
+        android:layout_alignLeft="@id/centerButton"
+        android:background="@mipmap/right"
+        android:text="右转" />
+
+    <Button
+        android:id="@+id/leftButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@id/centerButton"
+        android:layout_below="@id/centerButton"
+        android:background="@mipmap/left"
+        android:text="左转" />
+
+    <Button
+        android:id="@+id/upButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@id/centerButton"
+        android:layout_toLeftOf="@id/centerButton"
+        android:background="@mipmap/up"
+        android:text="前进" />
+
+    <Button
+        android:id="@+id/downButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@id/centerButton"
+        android:layout_toRightOf="@id/centerButton"
+        android:background="@mipmap/down"
+        android:text="后退" />
+
+    <Button
+        android:text="加速"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/button"
+        android:onClick="jiasu_click"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:text="Rubber duck program development team"
+        android:id="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="减速"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:onClick="jiansu_click"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginBottom="21dp" />
+
+</RelativeLayout>
